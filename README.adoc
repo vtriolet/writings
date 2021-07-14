@@ -1,1 +1,2 @@
 == Posts
+* 2021-07-14 - <<posts/2021/ublock_origin_and_umatrix_denial_of_service#,uBlock Origin (and uMatrix) DoS with strict-blocking filter and crafted URL>>
