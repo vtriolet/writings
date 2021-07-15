@@ -1,7 +1,5 @@
 = uBlock Origin (and uMatrix) DoS with strict-blocking filter and crafted URL
 
-:fn-edge-release: footnote:[Releases of the uBO Edge extension can sometimes be https://github.com/uBlockOrigin/uBlock-issues/issues/1649#issuecomment-879345449[held up by reviews]. Edge users can apparently https://support.microsoft.com/en-us/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026[install extensions from the Chrome add-ons site], though I do not know how that would impact the delivery of future uBO updates.]
-
 :fn-legacy-release: footnote:[A release of the uBO (Legacy) extension https://github.com/gorhill/uBlock-for-firefox-legacy/issues/310#issuecomment-876323719[is forthcoming].]
 
 :fn-ubo-strict-mode-history: footnote:[Strict-blocking support was added to uBO in https://github.com/gorhill/uBlock/commit/a4b4bc98ffc267496d5dc47d9c4477de38bcd0c7[commit a4b4bc] and was based on https://github.com/uBlock-LLC/uBlock/issues/1013[discussion in the issue tracker]. Support for displaying parsed URL parameters was added later in https://github.com/gorhill/uBlock/commit/1d5a592b129b92ff6fad7cf01c4b412547893bfc[commit 1d5a59] and was based on a https://github.com/gorhill/uBlock/issues/691[feature request].]
@@ -38,7 +36,7 @@ In earlier versions of uBO, these parameters were parsed recursively and added t
 uMatrix and ηMatrix, a fork of uMatrix compatible with Pale Moon, share similar code for displaying parsed URL parameters.
 
 Users should upgrade to uBO 1.36.2 and ηMatrix 4.4.9 to receive fixes for this security vulnerability, which affects the default configurations of both extensions.
-The uBO Edge extension{fn-edge-release} and the uBO (Legacy) extension{fn-legacy-release} have separate release processes and are still vulnerable.
+The uBO (Legacy) extension{fn-legacy-release} has a separate release process and is still vulnerable.
 
 *uMatrix remains unpatched and unmaintained*, though an unofficial mitigation is detailed below.
 
