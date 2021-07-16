@@ -117,8 +117,9 @@ The uMatrix repository was archived in September 2020{fn-umatrix-archived}, and 
 Until now, I've been treating uMatrix similarly to how I treated TrueCrypt after its development had stopped: unmaintained but still trustworthy in the absence of known vulnerabilities{fn-truecrypt-vulnerability}.
 I may have to rethink my default stance for unmaintained security-related software going forward.
 
-To mitigate the vulnerability for now, users can disable uMatrix's strict-blocking support by unselecting all of the filter lists on the "Assets" tab in the uMatrix dashboard.
-They can also enable all of the "Malware domains" and "Multipurpose" filter lists in uBlock Origin to help offset the lost filtering coverage.
+To mitigate the vulnerability for now, users can disable uMatrix's strict-blocking support by unselecting all of the filter lists on the "Assets" tab in the uMatrix dashboard and by removing any strict-blocking rules that were added manually.
+These manually-added rules will appear on the "My rules" tab and will be of the form `* nytimes.com * block` or `nytimes.com nytimes.com * block` (the hostname must be repeated).
+Users can also enable all of the "Malware domains" and "Multipurpose" filter lists in uBlock Origin to help offset the lost filtering coverage.
 
 
 == POCs
@@ -197,4 +198,3 @@ Thanks to JustOff for agreeing to prepare a future uBO (Legacy) release that add
 
 * https://github.com/gorhill/uBlock/wiki/Strict-blocking/[Documentation for uBO's strict-blocking feature]
 * https://github.com/gorhill/uMatrix/wiki/How-to-get-past-%22uMatrix-has-prevented-the-following-page-from-loading%22[Documentation for uMatrix's strict-blocking feature]
-
