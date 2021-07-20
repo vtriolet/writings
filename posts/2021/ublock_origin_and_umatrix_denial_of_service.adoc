@@ -1,7 +1,5 @@
 = uBlock Origin (and uMatrix) DoS with strict-blocking filter and crafted URL
 
-:fn-legacy-release: footnote:[A release of the uBO (Legacy) extension https://github.com/gorhill/uBlock-for-firefox-legacy/issues/310#issuecomment-876323719[is forthcoming].]
-
 :fn-ubo-strict-mode-history: footnote:[Strict-blocking support was added to uBO in https://github.com/gorhill/uBlock/commit/a4b4bc98ffc267496d5dc47d9c4477de38bcd0c7[commit a4b4bc] and was based on https://github.com/uBlock-LLC/uBlock/issues/1013[discussion in the issue tracker]. Support for displaying parsed URL parameters was added later in https://github.com/gorhill/uBlock/commit/1d5a592b129b92ff6fad7cf01c4b412547893bfc[commit 1d5a59] and was based on a https://github.com/gorhill/uBlock/issues/691[feature request].]
 
 :fn-umatrix-strict-mode-history: footnote:[uBO's support for displaying parsed URL parameters was ported to uMatrix in https://github.com/gorhill/uMatrix/commit/3f8168ce0bb7bb1837f9fedfc02aa09723ee3e25[commit 3f8168].]
@@ -36,7 +34,6 @@ In earlier versions of uBO, these parameters were parsed recursively and added t
 uMatrix and ηMatrix, a fork of uMatrix compatible with Pale Moon, share similar code for displaying parsed URL parameters.
 
 Users should upgrade to uBO 1.36.2 and ηMatrix 4.4.9 to receive fixes for this security vulnerability, which affects the default configurations of both extensions.
-The uBO (Legacy) extension{fn-legacy-release} has a separate release process and is still vulnerable.
 
 *Edit*: uMatrix 1.4.2 has been released with a fix for the vulnerability, though the uMatrix GitHub repository remains archived.
 
@@ -182,6 +179,7 @@ window.location = url;
 * 2021-07-11 - ηMatrix 4.4.9 became available on the Pale Moon add-ons site after a beta-testing period
 * 2021-07-14 - I published this post
 * 2021-07-19 - gorhill pushed a fix for uMatrix and tagged 1.4.2
+* 2021-07-20 - JustOff pushed a fix for uBO (Legacy) and tagged 1.16.4.30
 
 
 == Acknowledgments
@@ -192,7 +190,7 @@ Thanks to vannilla for fixing the issue in ηMatrix and preparing an out-of-band
 
 Thanks to nikrolls for submitting uBO 1.36.2 to the Edge add-ons site.
 
-Thanks to JustOff for agreeing to prepare a future uBO (Legacy) release that addresses the vulnerability.
+Thanks to JustOff for preparing a uBO (Legacy) release that addresses the vulnerability.
 
 == References
 
