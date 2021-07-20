@@ -38,7 +38,7 @@ uMatrix and ηMatrix, a fork of uMatrix compatible with Pale Moon, share similar
 Users should upgrade to uBO 1.36.2 and ηMatrix 4.4.9 to receive fixes for this security vulnerability, which affects the default configurations of both extensions.
 The uBO (Legacy) extension{fn-legacy-release} has a separate release process and is still vulnerable.
 
-*uMatrix remains unpatched and unmaintained*.
+*Edit*: uMatrix 1.4.2 has been released with a fix for the vulnerability, though the uMatrix GitHub repository remains archived.
 
 
 == Discussion
@@ -111,15 +111,14 @@ The vulnerability affects standard configurations of uBO, uMatrix, and ηMatrix 
 
 uBO 1.36.2 restricts parameter-nesting to 2 levels to fix the bug{fn-ubo-patch}, and ηMatrix 4.4.9 restricts parameter-nesting to 3 levels to fix the same issue{fn-ematrix-patch}.
 
-=== uMatrix mitigations
+=== uMatrix maintenance
 
 The uMatrix repository was archived in September 2020{fn-umatrix-archived}, and the last stable uMatrix release was in September 2019{fn-umatrix-last-stable-release}.
 Until now, I've been treating uMatrix similarly to how I treated TrueCrypt after its development had stopped: unmaintained but still trustworthy in the absence of known vulnerabilities{fn-truecrypt-vulnerability}.
 I may have to rethink my default stance for unmaintained security-related software going forward.
 
-*Edit*: This post previously included mitigations that were incomplete and potentially misleading for users with customized rules.
-As a result, I no longer feel comfortable making general recommendations for securing uMatrix installations, if that is indeed possible.
-I apologize for any confusion that I've caused, especially because some of the flawed mitigations have been quoted elsewhere.
+*Edit*: uMatrix 1.4.2 was tagged a few days after this post was published.
+Users who disabled filter lists on the "Assets" tab in the uMatrix dashboard can re-enable the lists after upgrading.
 
 
 == POCs
@@ -182,6 +181,7 @@ window.location = url;
 * 2021-07-07 - uBO 1.36.2 became available on the Opera add-ons site
 * 2021-07-11 - ηMatrix 4.4.9 became available on the Pale Moon add-ons site after a beta-testing period
 * 2021-07-14 - I published this post
+* 2021-07-19 - gorhill pushed a fix for uMatrix and tagged 1.4.2
 
 
 == Acknowledgments
